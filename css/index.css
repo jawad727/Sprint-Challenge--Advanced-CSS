@@ -247,3 +247,6 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home header img {
+  width: 100%;
+}
