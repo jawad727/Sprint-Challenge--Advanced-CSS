@@ -58,6 +58,7 @@
       }
 
       .btn {
+        .walk-btn(33%, 1.5rem);
       }
     }
 
@@ -80,6 +81,26 @@
     }
   }
 
+  @media @mobile {
+
+    .walk {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 10px;
+
+      .walk-text {
+
+        width: 100%;
+      }
+      .walk-img {
+        width: 95%;
+        padding: 0px;
+        margin: 10px;
+
+      }
+    }
 
 
+
+  }
 }// home
