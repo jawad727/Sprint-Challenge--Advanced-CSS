@@ -1,1 +1,37 @@
 // Mixins Here
+
+.red-bord() {
+    border: 1px solid red;
+}
+
+.gone() {
+    display: none;
+}
+
+.flex() {
+    display: flex;
+}
+
+// Parametric mixins here
+
+.walk-btn(@width, @rems) {
+border: 1px solid @btn-bg-color;
+background-color: @btn-bg-color;
+width: @width;
+text-align: center;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: @rems;
+color: white;
+
+&:hover {
+    background-color: white;
+    color: @btn-bg-color;
+}
+
+}
+
+// Escapes here ----
+
+@mobile: ~"(max-width: 500px)";
+
